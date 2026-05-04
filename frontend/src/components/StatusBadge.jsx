@@ -5,7 +5,11 @@ export default function StatusBadge({ value }) {
       ? "bg-emerald-100 text-success"
       : normalized === "fail"
         ? "bg-red-100 text-danger"
+        : normalized === "mandatory"
+          ? "bg-[#d5e3fc] text-primary"
+          : normalized === "optional"
+            ? "bg-slate-100 text-slate-600"
         : "bg-slate-100 text-slate-700"
 
-  return <span className={`rounded-full px-3 py-1 text-xs font-bold ${styles}`}>{value}</span>
+  return <span className={`status-pill ${styles}`}>{value}</span>
 }

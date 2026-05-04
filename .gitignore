@@ -1,0 +1,18 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Backend runtime data
+backend/autotender.db
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Logs
+*.log
